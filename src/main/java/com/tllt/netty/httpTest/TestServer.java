@@ -1,4 +1,4 @@
-package com.tllt.netty;
+package com.tllt.netty.httpTest;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

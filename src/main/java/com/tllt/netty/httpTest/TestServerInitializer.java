@@ -1,4 +1,4 @@
-package com.tllt.netty;
+package com.tllt.netty.httpTest;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
