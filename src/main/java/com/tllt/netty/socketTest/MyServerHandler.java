@@ -1,10 +1,13 @@
 package com.tllt.netty.socketTest;
 
+import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
+import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 public class MyServerHandler extends SimpleChannelInboundHandler<String> {
@@ -42,6 +45,7 @@ public class MyServerHandler extends SimpleChannelInboundHandler<String> {
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         Channel channel=ctx.channel();
         System.out.println(channel.remoteAddress()+"下线");
+
     }
 
     @Override
