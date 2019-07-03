@@ -2,3 +2,7 @@ build/
 out/
 .idea/
 .gradle
+gen-java/
+gen-py/
+src/Thrift/
+src/main/java/com/tllt/netty/ThriftTest/
